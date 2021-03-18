@@ -58,7 +58,7 @@
         <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("./assets/img/main-banner.png");height: 450px;'>
           <span id="blackOverlay" class="w-full h-full absolute opacity-5 bg-black"></span>
         </div>
-        <div class="container relative mx-auto mt-16">
+        <div class="container relative mx-auto mt-5 lg:mt-16">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-left">
               <div>
@@ -79,7 +79,7 @@
       <!--/HERO-->
       
       <!--SECTION 1-->
-      <section class="pb-20 bg-white mt-5">
+      <section class="pb-10 bg-white mt-5">
         <!--ABOUT-->
           <div class="flex flex-wrap items-center mt-5 text-center">
             <div class="w-full md:w-7/12 px-4 mr-auto ml-auto">
@@ -95,50 +95,30 @@
       <!--/ABOUT-->
 
       <!--GALLERY 1-->
-      <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
-        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
-          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
-            <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
-              <div class="z-50">
-                <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
-                  <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
-                    </path>
-                  </svg>
-                </button>
-              </div>
-              <div class="p-2">
-                <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
-                <p x-text="imgModalDesc" class="text-center text-white"></p>
-              </div>
-            </div>
-          </div>
-        </template>
-      </div>
-      <div x-data="{}" class="px-0 mb-50">
-        <div class="flex mb-30">
-          <div class="w-3/6 px-0">
+      <section>
+        <div class="flex flex-wrap mb-30">
+          <div class="w-full md:w-2/6 px-0">
             <div class="bg-gray-400">
                 <img alt="Placeholder" class="object-fit w-full" src="./assets/img/img-1.png">
             </div>
           </div>
-          <div class="w-3/6 px-0">
+          <div class="w-full md:w-2/6 px-0">
             <div class="bg-gray-400">
                 <img alt="Placeholder" class="object-fit w-full" src="./assets/img/img-2.png">
             </div>
           </div>
-          <div class="w-3/6 px-0">
+          <div class="w-full md:w-2/6 px-0">
             <div class="bg-gray-400">
                 <img alt="Placeholder" class="object-fit w-full" src="./assets/img/img-3.png">
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--/GALLERY-->
 
 
       <!--SECTION 2-->
-      <div class="container mx-auto px-4 my-32 w-full md:w-8/12 text-center">
+      <div class="container mx-auto px-4 lg:my-32 mt-10 mb-10 w-full md:w-8/12 text-center">
         <div class="items-center flex flex-wrap">
           <div class="w-full md:w-4/12 ml-auto mr-auto px-0">
             <img alt="..." class="max-w-full rounded-lg shadow-lg" src="./assets/img/img-4.png"/>
@@ -157,16 +137,16 @@
               </p>  
             </div>
           </div>
-          <div class="flex text-center mt-10 mx-auto w-full md:w-11/12"> 
-            <button class="w-6/12 bg-red-600 hover:bg-red-700 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-4 mx-2 font-semibold text-sm font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">SELL YOUR HOME WITH GARY</a></button>
-            <button style="background-color: #000033;"  class="w-6/12 transition-colors text-white text-center rounded-lg px-3 py-4 mx-2 font-semibold text-sm font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">VIEW GARY'S LISTINGS</a></button>
+          <div class="flex flex-wrap text-center mt-5 lg:mt-10 mx-auto w-full md:w-11/12"> 
+            <button class="w-full lg:w-6/12 bg-red-600 hover:bg-red-700 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-4 mx-2 font-semibold text-sm font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">SELL YOUR HOME WITH GARY</a></button>
+            <button style="background-color: #000033;"  class="w-full lg:w-6/12 transition-colors text-white text-center rounded-lg px-3 py-4 mx-2 font-semibold text-sm font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">VIEW GARY'S LISTINGS</a></button>
           </div>
         </div>
       </div>
       <!--/SECTION 2-->
 
       <!--REVIEWS-->
-      <div class="container mx-auto px-4 mb-32 mt-28 w-full md:w-8/12 text-center">
+      <div class="container mx-auto px-4 mb-16 lg:mt-28 mt-5 w-full md:w-8/12 text-center">
         <h2 class="text-3xl mb-2 font-bold leading-normal text-center">
           Five-Star Reviews for Gary Klassen 
         </h2>
@@ -235,7 +215,7 @@
             </div>
           </div>
         </div>
-        <button class="mt-5 py-4 w-5/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 mx-2 font-semibold text-md font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">VIEW ALL GARY'S REVIEWS</a></button>
+        <button class="mt-0 lg:mt-5 py-4 w-9/12 lg:w-5/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 mx-2 font-semibold text-md font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">VIEW ALL GARY'S REVIEWS</a></button>
       </div>
     </div>
     <!--/REVIEWS-->
@@ -256,7 +236,7 @@
               <p class="mt-4 text-md text-gray-300">
                 Gary was born and raised in the Lethbridge area and knows the region well. Based out of Lethbridge, he serves all of Southern Alberta—north to Vulcan and south to Waterton Park.
               </p>
-              <button class="mt-10 py-4 w-6/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 mx-2 font-semibold text-md font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">VIEW ALL GARY’S REAL ESTATE LISTINGS</a></button>
+              <button class="mt-10 lg:mt-10 py-4 w-10/12 lg:w-6/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 mx-2 font-semibold text-md font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">VIEW ALL GARY’S REAL ESTATE LISTINGS</a></button>
             </div>
           </div>
         </div>
@@ -270,7 +250,7 @@
     <!--/HERO-->
 
      <!--SECTION 4-->
-     <div class="container mx-auto px-4 mt-10 mb-0 md:mt-32 w-full md:w-8/12 text-center">
+     <div class="container mx-auto px-4 mt-0 mb-0 md:mt-32 w-full md:w-8/12 text-center">
       <div class="items-center flex flex-wrap">
         <div class="w-full md:w-4/12 ml-auto mr-auto px-0">
           <img alt="..." class="max-w-full rounded-lg shadow-lg" src="./assets/img/img-5.png"/>
@@ -326,7 +306,7 @@
 
     <!--SECTION 6-->
     <section class="py-5 relative block bg-white">
-        <div class="container mx-auto px-4 py-20 md:pt-24 text-center">
+        <div class="container mx-auto px-4 py-20 pt-0 md:pt-24 text-center">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-2xl font-bold text-grey-900">Services and products offered by  Lethbridge Realtor Gary Klassen</h2>
@@ -337,7 +317,7 @@
               <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                 <img src="assets/img/icon-realestate.png">
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-grey-900">
+              <h5 class="text-xl mt-10 lg:mt-5 font-semibold text-grey-900">
                 Residential and Commercial Real Estate
               </h5>
             </div>
@@ -345,7 +325,7 @@
               <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                 <img src="assets/img/icon-investment.png">
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-grey-900">
+              <h5 class="text-xl mt-10 lg:mt-5 font-semibold text-grey-900">
                 Investment and Industrial Real Estate
               </h5>
             </div>
@@ -353,7 +333,7 @@
               <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                 <img src="assets/img/icon-farm.png">
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-grey-900">Farms and Agricultural Real Estate</h5>
+              <h5 class="text-xl mt-10 lg:mt-5 font-semibold text-grey-900">Farms and Agricultural Real Estate</h5>
             </div>
           </div>
           <div class="flex flex-wrap mt-12 justify-center">
@@ -361,7 +341,7 @@
               <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                 <img src="assets/img/icon-acreages.png">
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-grey-900">
+              <h5 class="text-xl mt-10 lg:mt-5 font-semibold text-grey-900">
                 Acreages and Land Marketing
               </h5>
             </div>
@@ -369,7 +349,7 @@
               <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                 <img src="assets/img/icon-free.png">
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-grey-900">
+              <h5 class="text-xl mt-10 lg:mt-5 font-semibold text-grey-900">
                 Free Home  Evaluations
               </h5>
             </div>
@@ -377,7 +357,7 @@
               <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                 <img src="assets/img/icon-free-in.png">
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-grey-900">Free In-Home Marketing Appraisal</h5>
+              <h5 class="text-xl mt-10 lg:mt-5 font-semibold text-grey-900">Free In-Home Marketing Appraisal</h5>
             </div>
           </div>
         </div>
@@ -385,49 +365,29 @@
       <!--/SECTION 6-->
 
       <!--GALLERY 2-->
-      <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
-        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
-          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
-            <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
-              <div class="z-50">
-                <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
-                  <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
-                    </path>
-                  </svg>
-                </button>
-              </div>
-              <div class="p-2">
-                <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
-                <p x-text="imgModalDesc" class="text-center text-white"></p>
-              </div>
-            </div>
-          </div>
-        </template>
-      </div>
-      <div x-data="{}" class="px-0 mb-50">
-        <div class="flex mb-30">
-          <div class="w-3/6 px-0">
+      <section>
+        <div class="flex flex-wrap mb-30">
+          <div class="w-full md:w-2/6 px-0">
             <div class="bg-gray-400">
                 <img alt="Placeholder" class="object-fit w-full" src="./assets/img/img-7.png">
             </div>
           </div>
-          <div class="w-3/6 px-0">
+          <div class="w-full md:w-2/6 px-0">
             <div class="bg-gray-400">
                 <img alt="Placeholder" class="object-fit w-full" src="./assets/img/img-8.png">
             </div>
           </div>
-          <div class="w-3/6 px-0">
+          <div class="w-full md:w-2/6 px-0">
             <div class="bg-gray-400">
                 <img alt="Placeholder" class="object-fit w-full" src="./assets/img/img-9.png">
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--/GALLERY-->
 
       <!--SECTION MAP-->
-      <section class="pb-20 bg-white mt-32 mb-5">
+      <section class="pb-20 bg-white mt-10 lg:mt-32 mb-5">
           <div class="flex flex-wrap items-center mt-5 text-center">
             <div class="w-full md:w-7/12 px-4 mr-auto ml-auto">
               <h2 class="text-3xl mb-2 font-bold leading-normal">
@@ -440,7 +400,7 @@
                 Gary Klassen with RE/MAX Real Estate-Lethbridge can help. He handles all types of real estate,  including residential and commercial, condos, and farms and acreages. 
               </p>  
               <img alt="map" class="object-fit w-full mt-10" src="./assets/img/img-10.png">
-              <button class="mt-10 py-4 w-5/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 mx-2 font-semibold text-md font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">CONTACT GARY TODAY!</a></button>
+              <button class="mt-10 py-4 w-9/12 md:w-5/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 mx-2 font-semibold text-md font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="#">CONTACT GARY TODAY!</a></button>
               <p class="text-lg font-bold leading-relaxed mt-4 mb-4 text-gray-700">
                 Want to chat directly with Gary? Give him a call anytime at 403-330-4598   
               </p>
@@ -453,11 +413,11 @@
     <!--/MAIN-->
 
     <!--FOOTER-->
-    <section class="relative bg-gray-200 pt-4 pb-4">
-      <div class="container mx-auto px-4 mt-0 mb-10 md:mt-16 md:mb-0 w-full md:w-8/12 text-center pb-16 pt-8">
+    <section class="relative bg-gray-200 pt-4 pb-0">
+      <div class="container mx-auto px-4 mt-0 mb-0 md:mt-16 md:mb-0 w-full md:w-8/12 text-center pb-5 pt-8">
         <div class="items-center flex flex-wrap">
           <div class="w-full md:w-3/12 ml-auto mr-auto px-0">
-            <img alt="..." class="max-w-full rounded-lg" src="./assets/img/img-11.png"/>
+            <img class="max-w-full rounded-lg" src="./assets/img/img-11.png"/>
           </div> 
           <div class="w-full md:w-7/12 ml-auto mr-auto px-0 m-10 md:mt-0 text-left">
             <div class="md:pr-12">
