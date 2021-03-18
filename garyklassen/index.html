@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png"/>
+    <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link href="https://unpkg.com/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./assets/style.css" rel="stylesheet">
+    <title>EN School</title>
+  </head>
+
+  <body class="text-gray-800 antialiased">
+    <!--NAVBAR-->
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <a class="text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="#">EN School</a>
+          <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#link"><i class="lg:text-gray-300 text-gray-500 hover:text-yellow-300 fab fa-facebook text-lg leading-lg "></i><span class="lg:hidden inline-block ml-2">Share</span></a>
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#link"><i class="lg:text-gray-300 text-gray-500 hover:text-yellow-300 fab fa-twitter text-lg leading-lg"></i><span class="lg:hidden inline-block ml-2">Tweet</span></a>
+            </li>
+            
+            <li class="flex items-center">
+              <a href="#about" class="lg:text-white lg:hover:text-yellow-300 text-gray-800 text-xs font-bold uppercase px-4 py-2">About</a>
+            </li>
+            <li class="flex items-center">
+              <a href="#courses" class="lg:text-white lg:hover:text-yellow-300 text-gray-800 text-xs font-bold uppercase px-4 py-2">Courses</a>
+            </li>
+            <li class="flex items-center">
+              <a href="#reviews" class="lg:text-white lg:hover:text-yellow-300 text-gray-800 text-xs font-bold uppercase px-4 py-2">Reviews</a>
+            </li>
+            <li class="flex items-center">
+              <button class="w-full bg-yellow-400 hover:bg-yellow-300 focus:bg-yellow-300 transition-colors text-grey-900 text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/NAVBAR-->
+
+    <!--MAIN-->
+    <main>
+      <!--HERO-->
+      <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'>
+          <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
+              <div>
+                <h1 class="text-yellow-400 font-semibold text-6xl text-center">Reach Across the World</h1>
+                <p class="mt-4 text-lg text-gray-300">
+                  EN School offers corporates a solution for online training with unique and highly innovative learning formats
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+      <!--/HERO-->
+      
+      <!--SECTION 1-->
+      <section class="pb-20 bg-white -mt-24">
+        <!--BENEFITS-->
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-yellow-400">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Benefit 1</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-yellow-400">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Benefit 2</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-yellow-400">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Benefit 3</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/BENEFITS-->
+        <!--ABOUT-->
+        <section id="about" class="pb-20 bg-white -mt-24">
+          <div class="flex flex-wrap items-center mt-20 text-center">
+            <div class="w-full md:w-8/12 px-4 mr-auto ml-auto">
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Lorem ipsum dolor sit amet consectetur adipiscin
+              </h3>
+              <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam. Etiam gravida ac urna ut lobortis. Aenean eu tristique justo. Vivamus sit amet est interdum, consequat tortor non, accumsan nisi. Duis non venenatis elit, non consectetur neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean in semper leo. Fusce sit amet dolor varius, dignissim lorem et, mollis ex. Ut aliquam consequat nulla, ut egestas elit dapibus a. Vivamus quis congue lorem, sed semper lectus. Fusce rutrum lectus mi, non tempor nibh efficitur sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ABOUT-->
+      <!--HERO-->
+      <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'>
+          <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
+              <div>
+                <h1 class="text-yellow-400 font-semibold text-6xl text-center">Lorem ipsum dolor sit amet consectetur</h1>
+                <p class="mt-4 text-lg text-gray-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget turpis sollicitudin, semper ipsum quis, posuere ante. Phasellus hendrerit vulputate erat id posuere. Cras iaculis libero vitae facilisis vulputate. Vestibulum a lorem ligula. Aliquam sed metus a justo viverra sollicitudi.
+                </p>
+                <button class="mt-5 w-3/12 bg-yellow-400 hover:bg-yellow-300 focus:bg-yellow-300 transition-colors text-grey-900 text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+      <!--/HERO-->
+
+    <!--CLASSES-->
+    <section id="courses">
+    <div class="w-full mx-auto bg-white px-5 py-10 text-gray-600 mb-0 mt-10">
+      <h1 class="text-6xl md:text-6xl font-bold mb-5 text-gray-600 text-center">Our popular <br>courses</h1>
+      <div class="w-full md:flex mb-0">
+        <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+          <div class="w-full flex-grow">
+            <h2 class="text-center font-bold uppercase mb-4">PERSONAL</h2>
+            <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+              <ul class="text-sm px-5 mb-8">
+                  <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+              </ul>
+              <div class="flex items-center mt-4 text-gray-700 px-5">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                    <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                </svg>
+                <h1 class="px-2 text-sm">1 - 5 people</h1>
+            </div>
+            <div class="flex items-center mt-2 text-gray-700 px-5">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                    <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                </svg>
+                <h1 class="px-2 text-sm">Online</h1>
+            </div>
+          </div>
+          <div class="w-full mt-4">
+            <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+          </div>
+        </div>
+          <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+            <div class="w-full flex-grow">
+              <h2 class="text-center font-bold uppercase mb-4">PRO</h2>
+              <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+                <ul class="text-sm px-5 mb-8">
+                    <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+                </ul>
+                <div class="flex items-center mt-4 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                  </svg>
+                  <h1 class="px-2 text-sm">1 - 5 people</h1>
+              </div>
+              <div class="flex items-center mt-2 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                  </svg>
+                  <h1 class="px-2 text-sm">Online</h1>
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+            <div class="w-full flex-grow">
+              <h2 class="text-center font-bold uppercase mb-4">TEAM</h2>
+              <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+                <ul class="text-sm px-5 mb-8">
+                    <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+                </ul>
+                <div class="flex items-center mt-4 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                  </svg>
+                  <h1 class="px-2 text-sm">1 - 5 people</h1>
+              </div>
+              <div class="flex items-center mt-2 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                  </svg>
+                  <h1 class="px-2 text-sm">Online</h1>
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+            <div class="w-full flex-grow">
+              <h2 class="text-center font-bold uppercase mb-4">ENTERPRISE</h2>
+              <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+                <ul class="text-sm px-5 mb-8">
+                    <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+                </ul>
+                <div class="flex items-center mt-4 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                  </svg>
+                  <h1 class="px-2 text-sm">1 - 5 people</h1>
+              </div>
+              <div class="flex items-center mt-2 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                  </svg>
+                  <h1 class="px-2 text-sm">Online</h1>
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="w-full mx-auto bg-white px-5 py-10 text-gray-600 mb-20">
+        <div class="w-full md:flex mb-0">
+          <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+            <div class="w-full flex-grow">
+              <h2 class="text-center font-bold uppercase mb-4">PERSONAL</h2>
+              <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+                <ul class="text-sm px-5 mb-8">
+                    <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+                </ul>
+                <div class="flex items-center mt-4 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                  </svg>
+                  <h1 class="px-2 text-sm">1 - 5 people</h1>
+              </div>
+              <div class="flex items-center mt-2 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                  </svg>
+                  <h1 class="px-2 text-sm">Online</h1>
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+            <div class="w-full flex-grow">
+              <h2 class="text-center font-bold uppercase mb-4">PRO</h2>
+              <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+                <ul class="text-sm px-5 mb-8">
+                    <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+                </ul>
+                <div class="flex items-center mt-4 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                  </svg>
+                  <h1 class="px-2 text-sm">1 - 5 people</h1>
+              </div>
+              <div class="flex items-center mt-2 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                  </svg>
+                  <h1 class="px-2 text-sm">Online</h1>
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+            <div class="w-full flex-grow">
+              <h2 class="text-center font-bold uppercase mb-4">TEAM</h2>
+              <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+                <ul class="text-sm px-5 mb-8">
+                    <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+                </ul>
+                <div class="flex items-center mt-4 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                  </svg>
+                  <h1 class="px-2 text-sm">1 - 5 people</h1>
+              </div>
+              <div class="flex items-center mt-2 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                  </svg>
+                  <h1 class="px-2 text-sm">Online</h1>
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-0 mx-auto md:my-0 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+            <div class="w-full flex-grow">
+              <h2 class="text-center font-bold uppercase mb-4">ENTERPRISE</h2>
+                <h3 class="text-center font-bold text-4xl mb-5">$5<span class="text-sm">/mo</span></h3>
+                <ul class="text-sm px-5 mb-8">
+                    <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit volutpat libero, eget placerat eros egestas quis. Vestibulum eu faucibus diam.</li>
+                </ul>
+                <div class="flex items-center mt-4 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+                  </svg>
+                  <h1 class="px-2 text-sm">1 - 5 people</h1>
+              </div>
+              <div class="flex items-center mt-2 text-gray-700 px-5">
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                      <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                  </svg>
+                  <h1 class="px-2 text-sm">Online</h1>
+              </div>
+            </div>
+            <div class="w-full mt-4">
+              <button class="mt-5 w-7/12 bg-red-700 hover:bg-red-600 focus:bg-red-600 transition-colors text-white text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--HERO-->
+    <div class="relative pt-16 pb-16 flex content-center items-center justify-center" style="min-height: 25vh;">
+      <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'>
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
+            <div>
+              <h1 class="text-yellow-400 font-semibold text-6xl text-center">Reach Across the World</h1>
+              <p class="mt-4 text-lg text-gray-300">
+                EN School offers corporates a solution for online training with unique and highly innovative learning formats
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!--/HERO-->
+
+    <!--REVIEWS-->
+    <section id="reviews">
+    <div class="w-full bg-white px-5 py-16 md:py-24 text-gray-800">
+      <div class="w-full max-w-6xl mx-auto">
+          <div class="text-center max-w-xl mx-auto mb-5">
+              <h1 class="text-6xl md:text-6xl font-bold mb-5 text-gray-600">What people <br>are saying</h1>
+              <h3 class="text-xl mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          </div>
+          <div class="-mx-3 md:flex items-start mt-10">
+              <div class="px-3 md:w-1/3">
+                  <div class="w-full mx-auto rounded-lg bg-yellow-400 border border-gray-200 p-5 text-gray-900 font-light mb-6">
+                      <div class="w-full flex mb-4 items-center">
+                          <div class="flex-grow pl-3">
+                              <h6 class="font-bold text-sm uppercase text-gray-900">Kenzie Edgar.</h6>
+                          </div>
+                      </div>
+                      <div class="w-full">
+                          <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-900 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-lg leading-none italic font-bold text-gray-900 ml-1">"</span></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="px-3 md:w-1/3">
+                  <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                      <div class="w-full flex mb-4 items-center">
+                          <div class="flex-grow pl-3">
+                              <h6 class="font-bold text-sm uppercase text-gray-900">Tommie Ewart.</h6>
+                          </div>
+                      </div>
+                      <div class="w-full">
+                        <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-900 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-900 ml-1">"</span></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="px-3 md:w-1/3">
+                  <div class="w-full mx-auto rounded-lg bg-yellow-400 border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                      <div class="w-full flex mb-4 items-center">
+                          <div class="flex-grow pl-3">
+                              <h6 class="font-bold text-sm uppercase text-gray-900">Nevada Herbertson.</h6>
+                          </div>
+                      </div>
+                      <div class="w-full">
+                          <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-900 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-900 ml-1">"</span></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--/REVIEWS-->
+    </section>
+
+    <!--SUMMARY-->
+    <section class="py-5 relative block bg-gray-900">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 py-20 lg:pt-24 text-center">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-yellow-400">Lorem ipsum dolor sit amet</h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget turpis sollicitudin, semper ipsum quis, posuere ante. 
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap mt-12 justify-center">
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-yellow-400 inline-flex items-center justify-center">
+                <i class="fas fa-medal text-xl"></i>
+              </div>
+              <h6 class="text-xl mt-5 font-semibold text-white">
+                Excelent Services
+              </h6>
+              <p class="mt-2 mb-4 text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget turpis sollicitudin, semper ipsum quis, posuere ante.
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-yellow-400 inline-flex items-center justify-center">
+                <i class="fas fa-poll text-xl"></i>
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-white">
+                Grow your market
+              </h5>
+              <p class="mt-2 mb-4 text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget turpis sollicitudin, semper ipsum quis, posuere ante.
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-yellow-400 inline-flex items-center justify-center">
+                <i class="fas fa-lightbulb text-xl"></i>
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+              <p class="mt-2 mb-4 text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget turpis sollicitudin, semper ipsum quis, posuere ante.
+              </p>
+            </div>
+          </div>
+          <button class="mt-5 w-2/12 bg-yellow-400 hover:bg-yellow-300 focus:bg-yellow-300 transition-colors text-grey-900 text-center rounded-lg px-3 py-2 mx-2 font-semibold text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" type="button" style="transition: all 0.15s ease 0s;"><a href="https://wa.me/56941198144">Book Now</a></button>
+        </div>
+      </section>
+    </main>
+    <!--/MAIN-->
+
+    <!--FOOTER-->
+    <footer class="relative bg-red-800 pt-4 pb-4">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-white font-semibold py-1">
+              Copyright © 2021 EN School 
+              <a href="#" class="text-white hover:text-gray-900">Bárbara Smok</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
